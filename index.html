@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body {
+      font-family: "Figtree", sans-serif;
+      font-size: 12px;
+      background-color: hsl(47, 88%, 63%);
+      color: hsl(0, 0%, 7%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .attribution {
+      width: 352px;
+      font-size: 11px;
+      background-color: white;
+      box-shadow: 5px 5px hsl(0, 0%, 7%);
+      padding: 16px;
+      border-radius: 16px;
+      border: 2px solid hsl(0, 0%, 7%);
+    }
+
+    .img {
+      width: 352px;
+      height: 200px;
+      border-radius: 10px;
+      margin-bottom: 24px;
+    }
+
+    .button {
+      font-weight: bolder;
+      background-color: hsl(47, 88%, 63%);
+      border-radius: 4px;
+      padding: 8px 12px;
+      width: fit-content;
+    }
+
+    .publish {
+      font-weight: 500;
+      margin-top: 12px;
+    }
+
+    .text {
+      font-size: 14px;
+      font-weight: 500;
+      color: hsl(0, 0%, 42%);
+      margin-top: 12px;
+      margin-bottom: 12px;
+    }
+
+    .face {
+      width: 32px;
+    }
+
+    .namediv {
+      display: flex;
+      flex-direction: row;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .name {
+      font-size: 14px;
+      font-weight: bolder;
+    }
+
+    .hover:hover {
+      color: hsl(47, 88%, 63%);
+      cursor: pointer;
+    }
+    @media (max-width: 480px) {
+      
+
+      .attribution {
+        width: 295px;
+        
+      }
+
+      .img {
+        width: 295px;
+        height: auto;
+        margin-bottom: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="attribution">
+    <img class="img" src="./assets/images/illustration-article.svg" alt="illustration">
+    <div class="button">
+      Learning
+    </div>
+    <div class="publish">
+      Published 21 Dec 2023
+    </div>
+    <h1 class="hover">
+      HTML & CSS foundations
+    </h1>
+    <div class="text">
+      These languages are the backbone of every website, defining structure, content, and presentation.
+    </div>
+    <div class="namediv">
+      <img class="face" src="./assets/images/image-avatar.webp" alt="Greg Hooper">
+      <span class="name">Greg Hooper</span>
+    </div>
+  </div>
+</body>
+
+</html>
